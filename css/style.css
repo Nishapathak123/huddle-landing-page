@@ -85,6 +85,7 @@ header .wrapper{
 .banner .wrapper .banner-text p{
     padding: 0 280px 40px 280px;
     color: var(--Very-Dark-Cyan);
+    font-weight: 600;
 }
 .banner .wrapper .banner-text .btn-dark,
 .community .wrapper .btn-dark{
@@ -145,15 +146,20 @@ header .wrapper{
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    padding: 130px 0 50px 0;
 }
 
 .grow-together .wrapper .grows,
-.Flowing-conversation .wrapper .grows,
 .users .wrapper .grows{
     padding: 100px 150px 0 0;
+    width: 100%;
+}
+.flowing-conversation .wrapper .grows{
+    padding-left: 150px;
+    width: 100%;
 }
 .grow-together .wrapper .grows h3,
-.Flowing-conversation .wrapper .grows h3,
+.flowing-conversation .wrapper .grows h3,
 .users .wrapper .grows h3{
    
     color: var(--Very-Dark-Cyan);
@@ -164,8 +170,8 @@ header .wrapper{
     font-size: 18px;
     color: var(--Very-Dark-Cyan);
 }
-.Flowing-conversation .wrapper .grows p{
-    padding: 10px 0 10px 70px;
+.flowing-conversation .wrapper .grows p{
+    padding: 10px 70px 10px 0px;
     font-size: 18px;
     color: var(--Very-Dark-Cyan);
 }
@@ -181,7 +187,7 @@ header .wrapper{
 }
 .community .wrapper{
     padding: 150px 0;
-    text-align: center;
+    text-align: cener;
 }
 .community .wrapper .build-community h2{
     padding: 0 0 40px 0;
@@ -194,13 +200,9 @@ footer{
     left: 0;
 }
 footer .wrapper{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 300px;
-    padding: 120px 0;
-}
-footer .wrapper .footer-bottom svg{
-    fill: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0 0 0;
 }
 footer .wrapper .footer-bottom p{
     color: var(--light-white);
@@ -234,6 +236,9 @@ footer .wrapper .icons a:hover{
     color: var(--blue);
     
     
+}
+footer .wrapper .newslwtter {
+    padding-left: 300px;
 }
 footer .wrapper .newslwtter h3{
     color: var(--Very-Pale-Blue);
@@ -276,20 +281,191 @@ footer .wrapper .newslwtter form button:hover{
 
 @media only screen and (max-width: 1199px) {
     .wrapper {
-        max-width: 970px;
+       margin: 0 15px;
+    }
+    .banner .wrapper .banner-text h2{
+       font-size: 30px;
+    }
+    .banner .wrapper .banner-text p{
+        padding: 0 150px 40px 150px;
+    }
+    .banner .wrapper .banner-text .btn-dark,
+    .community .wrapper .btn-dark{
+        padding: 17px 65px;
+        
+    }
+    .views .wrapper .views-icons h1{
+        font-size: 40px;
+    }
+    .views .wrapper .views-icons p{
+        font-size: 16px;
+    }
+.flowing-conversation .wrapper{
+    padding: 130px 0 50px 0;
+}
+
+.grow-together .wrapper .grows,
+.users .wrapper .grows{
+    padding: 100px 100px 0 0;
+}
+.flowing-conversation .wrapper .grows{
+    padding-left: 150px;
+}
+.grow-together .wrapper .grows h3,
+.flowing-conversation .wrapper .grows h3,
+.users .wrapper .grows h3{
+   font-size: 25px;
+}
+.grow-together .wrapper .grows p,
+.users .wrapper .grows p{
+    padding: 10px 20px 10px 0;
+    font-size: 16px;
+    
+}
+    .flowing-conversation .wrapper .grows p{
+        padding: 10px 0px 10px 0px;
+        font-size: 16px;
+    }
+    .community .wrapper .build-community h2{
+        padding: 0 0 40px 0;
+        font-size: 30px;
+        color: var(--Very-Dark-Cyan);
+    }
+    footer .wrapper .footer-bottom p{
+        color: var(--light-white);
+        padding: 20px 70px 20px 0;
+    }
+    footer .wrapper .newslwtter p{
+        color: var(--Very-Pale-Blue);
+        padding: 10px 50px 10px 0;
+        
+    }
+    footer .wrapper .newslwtter form input{
+        width: 100%;
+        padding: 12px 25px;
+        margin-bottom: 20px;
+    }
+    footer .wrapper .newslwtter form button{ 
+        margin-left: auto;
+        padding: 12px 25px;
     }
 }
 
-@media only screen and (max-width: 1024px) {
-    .wrapper {
-        max-width: 750px;
-    }
-}
+
 
 @media only screen and (max-width: 767px) {
     .wrapper {
-        max-width: 420px;
-
        padding: 0 15px;
+    }
+    .btn{
+        font-size: 11px;
+        padding: 7px 20px;
+       
+    }
+    .banner .wrapper .banner-text h2{
+        font-size: 30px;
+     }
+     .banner .wrapper .banner-text p{
+         padding: 0 10px 80px 10px;
+         font-size: 17px;
+         line-height: 30px;
+     }
+     .banner .wrapper .banner-text .btn-dark,
+     .community .wrapper .btn-dark{
+         padding: 15px 55px;
+         
+     }
+     .banner .wrapper .banner-text img{
+        padding: 150px 0 40px 0;
+    }
+    .views .wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 0 100px 0;
+        text-align: center;
+    }
+    .views .wrapper .views-icons{
+        font-size: 30px;
+        text-align: center;
+    }
+    .views .wrapper .views-icons svg{
+        align-items: center;
+    }
+     .views .wrapper .views-icons h1{
+         font-size: 30px;
+     }
+     .views .wrapper .views-icons p{
+         font-size: 14px;
+     }
+     .views .wrapper .views-icons .texter{
+        padding-left: 10px;
+    }
+    .grow-together .wrapper,
+    .users .wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .flowing-conversation .wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+ 
+ .grow-together .wrapper .grows,
+ .users .wrapper .grows{
+     text-align: center;
+     padding: 150px 0px 0 0;
+ } 
+ .flowing-conversation .wrapper .grows{
+    padding-left: 0px;
+    text-align: center;
+}
+.grow-together .wrapper .grows h3,
+.users .wrapper .grows h3{
+   font-size: 25px;
+}
+.flowing-conversation .wrapper .grows h3{
+    padding-top: 150px;
+}
+.grow-together .wrapper .grows p,
+.users .wrapper .grows p{
+    padding: 0px 0px 50px 0;
+    font-size: 16px;
+    
+}
+    .flowing-conversation .wrapper .grows p{
+        padding: 10px 0px 10px 0px;
+        font-size: 16px;
+    }
+    footer .wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    footer .wrapper .footer-bottom{
+        padding-top: 120px;
+    }
+    footer .wrapper .footer-bottom p{
+        color: var(--light-white);
+        padding: 20px 70px 20px 0;
+    }
+    footer .wrapper .icons a{
+        font-size: 30px;
+        margin-right: 20px;
+    }
+    footer .wrapper .newslwtter{
+        padding-left: 0;
+    }
+    footer .wrapper .newslwtter p{
+        color: var(--Very-Pale-Blue);
+        padding: 10px 50px 10px 0;
+        
+    }
+    footer .wrapper .newslwtter form input{
+        width: 100%;
+        padding: 14px 25px;
+        margin-bottom: 20px;
+    }
+    footer .wrapper .newslwtter form button{ 
+        margin-right: 0 auto;
+        padding: 15px 35px;
     }
 }
