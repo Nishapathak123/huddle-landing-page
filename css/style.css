@@ -71,6 +71,10 @@ header .wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+header .wrapper .logo img{
+    width: 100%;
 }
 .banner .wrapper{
     max-width: 1030px;
@@ -185,9 +189,14 @@ header .wrapper{
     width: 100%;
     height: auto;
 }
+.top-curved-mobile, .bottom-curved-mobile, .footer-curved-mobile{
+    width: 100%;
+    height: auto;
+    display: none;
+}
 .community .wrapper{
     padding: 150px 0;
-    text-align: cener;
+    text-align: center;
 }
 .community .wrapper .build-community h2{
     padding: 0 0 40px 0;
@@ -362,8 +371,16 @@ footer .wrapper .newslwtter form button:hover{
         padding: 7px 20px;
        
     }
+    .banner .wrapper{
+            padding: 130px 0 0px 0;
+            
+    }
+    header .wrapper .logo img{
+        width: 73%;
+    }
     .banner .wrapper .banner-text h2{
         font-size: 30px;
+        line-height: 57px;
      }
      .banner .wrapper .banner-text p{
          padding: 0 10px 80px 10px;
@@ -380,7 +397,7 @@ footer .wrapper .newslwtter form button:hover{
     }
     .views .wrapper{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 0 0 100px 0;
         text-align: center;
     }
@@ -392,10 +409,15 @@ footer .wrapper .newslwtter form button:hover{
         align-items: center;
     }
      .views .wrapper .views-icons h1{
-         font-size: 30px;
+         font-size: 45px;
      }
      .views .wrapper .views-icons p{
-         font-size: 14px;
+         font-size: 20px;
+     }
+     .views .wrapper .views-icons img{
+         text-align: center;
+         margin: auto;
+         padding: 200px 0 10px 0;
      }
      .views .wrapper .views-icons .texter{
         padding-left: 10px;
@@ -404,6 +426,7 @@ footer .wrapper .newslwtter form button:hover{
     .users .wrapper{
         display: flex;
         flex-direction: column-reverse;
+        padding: 60px 0;
     }
     .flowing-conversation .wrapper{
         display: flex;
@@ -418,6 +441,14 @@ footer .wrapper .newslwtter form button:hover{
  .flowing-conversation .wrapper .grows{
     padding-left: 0px;
     text-align: center;
+}
+
+.top-curved, .bottom-curved, .footer-curved{
+    display: none;
+}
+.top-curved-mobile, .bottom-curved-mobile, .footer-curved-mobile{
+    
+    display: block;
 }
 .grow-together .wrapper .grows h3,
 .users .wrapper .grows h3{
